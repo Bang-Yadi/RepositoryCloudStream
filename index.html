@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Repository CloudStream</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body bgcolor="#0F0F0F">
+  	<script src="script.js"></script>
+  	<div>
+  	<table align="center" border="2" cellpadding="5">
+        <tbody>
+            <tr><th colspan="3">Repository CloudStream</th>
+        </tr></tbody>
+        <tbody><tr>
+			<td bgcolor="white" align="center" rowspan="1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH5enYf7_YRJQ77IW6eF_qThyZ_wRdXTz5RQ&usqp=CAU" width="350" />
+            </td>
+        </tr></tbody>
+        </div>
+        <div>
+        </table><br />
+        <table align="center" border="2" cellpadding="10">
+        <tbody><tr>
+            <td>CloudStream App</td>
+            <td><button onclick="downloadApp()">Download</button></td>
+        </tr></tbody>
+        <tbody><tr>
+			<td>Cara Menggunakan</td>
+			<td><button onclick="showModal()">Play Video</button>
+  <dialog id="dialog"      onclick="performClose()">
+   <p><video controls width="350px" height="400px">
+    <source src="Video/CaraPake.mp4" type="video/mp4" />
+    Browsermu tidak mendukung tag ini, upgrade donk!
+  </video></p>
+</dialog></td>
+        </tr></tbody>
+        <tbody><tr>
+			<td>Cara Nonton NSFW<br/><i><font size="1px">[ memerlukan vpn ]</font></i></td>
+			<td><button onclick="showModal2()">Play Video</button>
+  <dialog id="dialog2"      onclick="performClose2()">
+   <p><video controls width="350px" height="400px" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY5kRg5nAS5AVAMN4ocNGjkcDk8sPEjOl1aA&usqp=CAU">
+    <source src="Video/CaraNontonNSFW.mp4" type="video/mp4" />
+    Browsermu tidak mendukung tag ini, upgrade donk!
+  </video></p>
+</dialog></td>
+        </tr></tbody>
+    </table><br />
+    </div>
+    <div>
+    	<table align="center" border="2" cellpadding="10">
+    	<tbody>
+            <tr><th colspan="3"><font color="red"><marquee behavior="alternate"
+width="12%">⚠️</marquee></font>PEMBERITAHUAN PENTING<font color="red"><marquee behavior="alternate"
+width="12%">⚠️</marquee></font></th>
+        </tr></tbody>
+        <tbody><tr>
+            <td align="center">Waduh ternyata beberapa device ada yang ngebug (ngga muncul plugin nya kalau pake yang SALIN).<br/>Jika kamu mengalami seperti itu, silahkan hapus data app CloudStream, lalu pilih kembali Repository disini dengan klik Install (bukan klik yang Salin)</td>
+        </tr></tbody>
+    </table><br />
+      </div>
+    <div>
+    <table align="center" border="1" cellpadding="15">
+        <tbody><tr>
+			<th align="center" colspan="3">Salin atau Install Repository</th>
+        </tr></tbody>
+        <tbody><tr>
+			<th align="center" colspan="3">Jika kamu pilih salin, maka akan menyalin link dan kamu harus masukkan manual ke app CloudStream.</th>
+        </tr></tbody>
+        <tbody><tr>
+			<th align="center" colspan="3">Jika kamu pilih Install, itu akan mendeteksi app CloudStream dan membuka nya.<br/>Akan muncul pilihan Install/Pasang/Download saat masuk ke app CloudStream nya.</th>
+        </tr></tbody>
+        <tbody><tr>
+            <td>Extension</td>
+            <td><span hidden="true" id="Extension">https://raw.githubusercontent.com/recloudstream/extensions/builds/plugins.json</span><button onclick="copyExtension()">Salin</button></td>
+            <td><button onclick="installExtension()">Install</button></td>
+        </tr></tbody>
+        <tbody><tr>
+            <td>Multilingual<br/><i><font size="2px">[ multi-bahasa ]</font></i></td>
+            <td><span hidden="true" id="Multilingual">https://codeberg.org/cloudstream/cloudstream-extensions-multilingual/raw/branch/builds/plugins.json</span><button onclick="copyMultilingual()">Salin</button></td>
+            <td><button onclick="installMultilingual()">Install</button></td>
+        </tr></tbody>
+         <tbody><tr>
+            <td>English<br/><i><font size="1px">[ konten Inggris ]</font></i></td>
+            <td><span hidden="true" id="English">https://codeberg.org/cloudstream/cloudstream-extensions/raw/branch/builds/plugins.json</span><button onclick="copyEnglish()">Salin</button></td>
+            <td><button onclick="installEnglish()">Install</button></td>
+        </tr></tbody>
+         <tbody><tr>
+            <td>Hexated<br/><i><font size="1px">[ Indonesia &amp; Inggris ]</font></i></td>
+            <td><span hidden="true" id="Indonesia">https://raw.githubusercontent.com/hexated/cloudstream-extensions-hexated/builds/plugins.json</span><button onclick="copyIndonesia()">Salin</button></td>
+            <td><button onclick="installIndonesia()">Install</button></td>
+        </tr></tbody>
+        <tbody><tr>
+            <td>NSFW<br/><i><font size="1px">[ konten 4no 17+ ]</font></i></td>
+            <td><span hidden="true" id="NSFW">https://codeberg.org/cloudstream/cs3xxx-repo/raw/branch/builds/plugins.json</span><button onclick="copyNSFW()">Salin</button></td>
+            <td><button onclick="installNSFW()">Install</button></td>
+        </tr></tbody>
+        <tbody><tr>
+            <td>LinkDev-256<br/><i><font size="1px">[ Tamil dan India ]</font></i></td>
+            <td><span hidden="true" id="LinkDev256">https://raw.githubusercontent.com/LikDev-256/likdev256-tamil-providers/builds/plugins.json</span><button onclick="copyLinkDev256()">Salin</button></td>
+            <td><button onclick="installLinkDev256()">Install</button></td>
+        </tr></tbody>
+        <tbody><tr>
+            <td>Stormunblessed<br/><i><font size="1px">[ Kronch ]</font></i></td>
+            <td><span hidden="true" id="Storm">https://raw.githubusercontent.com/Stormunblessed/kronch-ext/builds/plugins.json</span><button onclick="copyStorm()">Salin</button></td>
+            <td><button onclick="installStorm()">Install</button></td>
+        </tr></tbody>
+        <tbody><tr>
+            <td>Stormunblessed2<br/><i><font size="1px">[ Kronch v2 ]</font></i></td>
+            <td><span hidden="true" id="Storm2">https://raw.githubusercontent.com/Stormunblessed/storm-ext/builds/plugins.json</span><button onclick="copyStorm2()">Salin</button></td>
+            <td><button onclick="installStorm2()">Install</button></td>
+        </tr></tbody>
+        <tbody><tr>
+            <td>CakesTwix<br/><i><font size="1px">[ Ukraina ]</font></i></td>
+            <td><span hidden="true" id="CakesTwix">https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/plugins.json</span><button onclick="copyCakesTwix()">Salin</button></td>
+            <td><button onclick="installCakesTwix()">Install</button></td>
+        </tr></tbody>
+        <tbody><tr>
+            <td>BongNgo<br/><i><font size="1px">[ bong ngo ]</font></i></td>
+            <td><span hidden="true" id="BongNgo">https://raw.githubusercontent.com/duongnv1996/bongngo-cs3-extension/builds/plugins.json</span><button onclick="copyBongNgo()">Salin</button></td>
+            <td><button onclick="installBongNgo()">Install</button></td>
+        </tr></tbody>
+        <tbody><tr>
+            <td>Arab<br/><i><font size="1px">[ berbahasa Arab ]</font></i></td>
+            <td><span hidden="true" id="Arab">https://codeberg.org/cloudstream/arab/raw/branch/builds/plugins.json</span><button onclick="copyArab()">Salin</button></td>
+            <td><button onclick="installArab()">Install</button></td>
+        </tr></tbody>
+        <tbody><tr>
+            <td>Prancis<br/><i><font size="1px">[ berbahasa Prancis ]</font></i></td>
+            <td><span hidden="true" id="Prancis">https://raw.githubusercontent.com/AirbnbEcoPlus/frencharchive/master/plugins.json</span><button onclick="copyPrancis()">Salin</button></td>
+            <td><button onclick="installPrancis()">Install</button></td>
+        </tr></tbody>
+        <tbody><tr>
+            <td>FStream<br/><i><font size="1px">[ Prancis  v2 ]</font></i></td>
+            <td><span hidden="true" id="FStream">https://codeberg.org/7TE/FStream/raw/branch/build/plugins.json</span><button onclick="copyFStream()">Salin</button></td>
+            <td><button onclick="installFStream()">Install</button></td>
+        </tr></tbody>
+        <tbody><tr>
+            <td>Horis<br/><i><font size="1px">[ hayya, ini buat China ]</font></i></td>
+            <td><span hidden="true" id="Horis">https://raw.githubusercontent.com/821938089/cloudstream-extensions/builds/plugins.json</span><button onclick="copyHoris()">Salin</button></td>
+            <td><button onclick="installHoris()">Install</button></td>
+        </tr></tbody>
+		</table>
+		<p><marquee><font color="white">HTML yang sederhana ajah, dibuat oleh <a href="https://m.facebook.com/OfficialYadiFernando">Yadi Fernando</a></font></marquee></p>
+			</div>
+			<div><br/><br/><br/><br/></div>
+		</div>
+	</body>
+</html>

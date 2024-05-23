@@ -1,0 +1,74 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+button{
+    background-color: skyblue;
+    background: #ff0000;
+    font-size: 15px;
+    color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px;
+    margin-top: 5px;
+}
+
+button:hover{
+  background: black;
+  color: red;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  border: black 2px solid;
+  border-radius: 5px;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #FFFFFF;
+  }
+  50% {
+    background-color: #00E2FF;
+  }
+  100% {
+    background-color: #FFFFFF;
+  }
+}
+
+table{
+	border-radius: 8px;
+}
+
+th{
+	border-radius: 5px;
+	background: black;
+	color: white;
+}
+
+td{
+	color: white;
+	background: black;
+}
+
+dialog{
+	border-radius: 10px;
+	background: black;
+	border: 2px red solid;
+}
+
+}
